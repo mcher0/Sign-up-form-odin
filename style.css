@@ -77,7 +77,6 @@ label{
 }
 button{
     width: 33%;
-    margin-left: 23px;
     height: 60px;
     border-radius: 10px;
     border: none;
@@ -87,7 +86,7 @@ button{
     font-weight: bold;
 }
 button:hover{
-    box-shadow: 2px 0px 5px 2px #424242;
+    box-shadow: 2px 0px 5px 5px #424242;
 }
 button:active{
     color: white;
