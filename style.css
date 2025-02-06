@@ -15,6 +15,8 @@ body{
 span{
     background-color: #F7931E;
     color: black;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .sideHero{
@@ -36,7 +38,7 @@ span{
 
 .Form-blank > p{
     margin-left: 2%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 form{
@@ -45,14 +47,21 @@ form{
     background-color: #303030;
     padding: 1.2rem;
     gap: 20px;
+    margin-bottom: 40px;
+    box-shadow: 2px 0px 5px 2px #424242;
 }
 input{
     border-radius: 10px;
     height: 30px ;
     border: none;
+    color: whitesmoke;
+    font-family: Roboto;
+    font-size: 0.8rem;
+    padding-left: 20px;
+    background-color: #525252;
 }
 
-input:invalid{
+input:user-invalid{
     border: 1px solid red;
 }
 
@@ -67,7 +76,22 @@ label{
     margin-bottom: 5px;
 }
 button{
-    width: 20%;
+    width: 33%;
+    margin-left: 23px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F7931E;
+    color: #212121;
+    font-size:1rem;
+    font-weight: bold;
+}
+button:hover{
+    box-shadow: 2px 0px 5px 2px #424242;
+}
+button:active{
+    color: white;
+    transform: scale(0.95);
 }
 @media only screen and (max-width: 1050px) {
     body{
@@ -93,5 +117,6 @@ button{
         font-size: 1rem;
         margin-bottom: 5px;
     }
+
 
   }
