@@ -116,6 +116,19 @@ button:active{
         font-size: 1rem;
         margin-bottom: 5px;
     }
+    button{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .sideHero{
+        background-color: black;
+        height: 100vh;
+        flex-basis: 33vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+    }
 
 
   }
