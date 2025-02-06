@@ -1,11 +1,20 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-VariableFont_wdth\,wght.ttf'); 
+  }
 html{
     font-size: 1.2rem;
     color: white;
     background-color: #212121;
+    font-family:Roboto;
 }
 body{
     display: flex;
     margin: 0;
+}
+span{
+    background-color: #F7931E;
+    color: black;
 }
 
 .sideHero{
@@ -15,14 +24,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 3rem;
 }
 .Form-blank{
     height: 100vh;
-    padding-left: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-basis: 66vw;
+}
+
+.Form-blank > p{
+    margin-left: 2%;
+    font-size: 1.5rem;
 }
 
 form{
@@ -30,4 +44,54 @@ form{
     flex-wrap: wrap;
     background-color: #303030;
     padding: 1.2rem;
+    gap: 20px;
 }
+input{
+    border-radius: 10px;
+    height: 30px ;
+    border: none;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+.input-block{
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+label{
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+button{
+    width: 20%;
+}
+@media only screen and (max-width: 1050px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    html{
+        font-size: 1rem;
+
+    }
+    .input-block{
+        width: 80%;
+    }
+    input{
+        height: 50px;
+    }
+    label{
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+  }
